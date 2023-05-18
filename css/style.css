@@ -1,0 +1,47 @@
+body::before {
+    display: block;
+    content: '';
+    height: 60px;
+}
+
+@media(min-width:768px) {
+    .news-input {
+        width: 50%;
+    }
+}
+
+#testimonialSliderRight{
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    right:0;
+}
+
+#testimonialSliderLeft {
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    left:0;
+}
+
+.tns-nav {
+  text-align: center;
+  margin: 10px 0;
+}
+.tns-nav > [aria-controls] {
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  margin: 0 5px;
+  border-radius: 50%;
+  background: #ddd;
+  border: 0;
+}
+.tns-nav > .tns-nav-active { background: #999; }
+.tns-controls {
+    display: none;
+}
+
+.tns-outer button[data-action="stop"], .tns-outer button[data-action="start"] {
+    display: none;
+}
